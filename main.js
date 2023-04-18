@@ -72,10 +72,11 @@ function moveRect(e) {
       y = Math.min(maxY, y + 20);
       break;
   }
+
  // Setter posisjonen til et rektangel ved hjelp av x- og y-verdier
 rectangle.style.left = `${x}px`;
 rectangle.style.top = `${y}px`;
-
+}
 // Legger til en lytter på dokumentet for å reagere på tastetrykk og kalle på moveRect-funksjonen
 document.addEventListener("keydown", moveRect);
 
@@ -98,4 +99,4 @@ setInterval(() => {
   rectangle2.style.height = `${height}px`;
   rectangle2.style.left = `${left}px`;
   rectangle2.style.top = `${y2}px`;
-}, 60000)}
+}, 60000)
